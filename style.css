@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    background-image: url('weather.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat Alternates', sans-serif;
+} 
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+#header {
+display: flex;
+justify-content: center;
+margin-top: 30px;
+}
+#input {
+background-color: rgba(188, 192, 247, 0.116);
+border-radius: 10px;
+border: 3px solid #7a787e;
+padding: 10px;
+font-size: 20px;
+}
+#input:focus{
+    background-color: white;
+}
+#when-where {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#city {
+    color: black;
+    font-size: 45px;
+}
+#date {
+    color: black;
+    font-size: 24px;
+}
+#now {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#temperature {
+    color: black;
+    font-size: 90px;
+    font-weight: bold;
+    text-shadow: 5px 5px rgb(245, 229, 206);
+    margin: 0;
+}
+#feelsLike {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+#conditions {
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+}
+#variation {
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 2px 3px rgb(245, 229, 206);
+}
+.links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+@media all and (max-width: 500px) {
+    #container {
+      min-height: 100vh;
+    }
+    #city {
+        font-size: 35px;
+    }
+    #date {
+        color: black;
+        font-size: 14px;
+    }
+    #temperature {
+        color: black;
+        font-size: 80px;
+        font-weight: bold;
+        text-shadow: 5px 5px rgb(245, 229, 206);
+        margin: 0;
+    }
+    #feelsLike {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #conditions {
+        color: black;
+        font-size: 22px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    #variation {
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        text-shadow: 2px 3px rgb(245, 229, 206);
+    }
+  }
+
